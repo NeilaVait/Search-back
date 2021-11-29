@@ -21,4 +21,8 @@ mongoose
   })
   .catch((err) => console.error(err.message));
 
+//routes
+const keywordsRoutes = require('./routes/keywordsRoutes');
+app.use('/', keywordsRoutes);
+
 app.listen(PORT, console.log(`back end online on port ${PORT}`));
