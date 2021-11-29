@@ -23,6 +23,8 @@ mongoose
 
 //routes
 const keywordsRoutes = require('./routes/keywordsRoutes');
+const clickedArticlesRoutes = require('./routes/clickedArticlesRoutes');
 app.use('/', keywordsRoutes);
+app.use('/', clickedArticlesRoutes);
 
 app.listen(PORT, console.log(`back end online on port ${PORT}`));
